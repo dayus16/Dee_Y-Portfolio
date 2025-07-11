@@ -1,0 +1,63 @@
+import React from "react";
+import DeeYImage from "../Images/Dee.png";
+import { FaRegEnvelope, FaWhatsapp } from "react-icons/fa";
+import { IoCallSharp } from "react-icons/io5";
+
+const About = () => {
+  return (
+    <div id="about">
+      <div className="p-5 mt-20 max-w-7xl mx-auto">
+        <div className="text-4xl text-[#00df9a] font-bold">
+          <h1 className="border-b border-dotted border-[#00df9a] pb-3">
+            About Me
+          </h1>
+        </div>
+        <div className="flex flex-col md:flex-row justify-between items-center gap-15 mt-8">
+          <div className="flex-1">
+            <h3 className="mt-5 text-[#00df9a] text-2xl">
+              Front End Developer
+            </h3>
+            <p className="mt-3 border-b border-dotted border-[#00df9a] pb-3 w-full text-lg leading-relaxed">
+              I’m a Frontend Developer with practical experience building
+              responsive, scalable web applications using React, Tailwind CSS,
+              and JavaScript. I enjoy working closely with designers and backend
+              teams to deliver clean, maintainable, and high-performance user
+              interfaces. I’m a quick learner, passionate about modern React
+              practices such as state management, data fetching, server-side
+              rendering, and responsive design. I love working in agile teams
+              where I can contribute, grow, and continuously improve my skills.
+            </p>
+            <div className="mt-5">
+              <h3 className="text-2xl text-[#00df9a]">Personal Information</h3>
+              <p className="mt-1 text-lg font-semibold">
+                Name: Odoje Oladayo Jacob
+              </p>
+              <p className="text-lg font-semibold">Address: Abuja, Nigeria</p>
+              <p className="flex items-center gap-2 text-lg font-semibold">
+                <FaRegEnvelope /> Dayodoje@mail.com
+              </p>
+              <p className="flex items-center gap-2 text-lg font-semibold">
+                <FaWhatsapp /> 07057616192
+              </p>
+              <p className="flex items-center gap-2 text-lg font-semibold">
+                <IoCallSharp /> 08167482343
+              </p>
+            </div>
+          </div>
+
+          <div className="flex-1 flex justify-center">
+            <div className="w-100 h-130 rounded-lg overflow-hidden shadow-lg">
+              <img
+                src={DeeYImage}
+                alt="Odoje Oladayo Jacob"
+                className="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default About;
