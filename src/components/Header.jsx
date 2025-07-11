@@ -27,18 +27,21 @@ const Header = () => {
         <nav className="mt-5 flex justify-center gap-4 text-3xl text-[#00df9a]">
           <a
             href="https://www.linkedin.com/in/dayo-odoje/"
+            target="_blank"
             className="hover:transform hover:-translate-y-1 transition-transform duration-200"
           >
             <FaLinkedin />
           </a>
           <a
             href="https://x.com/dayoodoje"
+            target="_blank"
             className="hover:transform hover:-translate-y-1 transition-transform duration-200"
           >
             <FaXTwitter />
           </a>
           <a
             href="https://github.com/dayus16"
+            target="_blank"
             className="hover:transform hover:-translate-y-1 transition-transform duration-200"
           >
             <FaGithub />

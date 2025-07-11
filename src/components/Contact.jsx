@@ -45,7 +45,7 @@ const Contact = () => {
           {/* Input Fields */}
           <div className="flex flex-col md:flex-row justify-center gap-4 w-full max-w-2xl">
             <div className="flex flex-col w-full">
-              <label className="mb-1">Name</label>
+              <label className="mb-1 text-gray-300">Name</label>
               <input
                 className="w-full py-2 px-4 outline-none border border-[#00df9a] rounded"
                 type="text"
@@ -57,7 +57,7 @@ const Contact = () => {
               />
             </div>
             <div className="flex flex-col w-full">
-              <label className="mb-1">Email</label>
+              <label className="mb-1 text-gray-300">Email</label>
               <input
                 className="w-full py-2 px-4 outline-none border border-[#00df9a] rounded"
                 type="email"
@@ -72,7 +72,7 @@ const Contact = () => {
 
           {/* Message Field */}
           <div className="flex flex-col w-full max-w-2xl mt-5">
-            <label className="mb-1">Message</label>
+            <label className="mb-1 text-gray-300">Message</label>
             <textarea
               className="w-full py-2 px-4 outline-none border border-[#00df9a] rounded"
               rows="5"

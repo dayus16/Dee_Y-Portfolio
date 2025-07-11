@@ -6,9 +6,9 @@ import { IoCallSharp } from "react-icons/io5";
 const About = () => {
   return (
     <div id="about">
-      <div className="p-5 mt-20 max-w-7xl mx-auto">
-        <div className="text-4xl text-[#00df9a] font-bold">
-          <h1 className="border-b border-dotted border-[#00df9a] pb-3">
+      <div className="p-5 mt-20 mx-auto">
+        <div className="p-5 text-4xl text-[#00df9a] font-bold">
+          <h1 className="border-b border-dotted pb-3">
             About Me
           </h1>
         </div>
@@ -17,7 +17,7 @@ const About = () => {
             <h3 className="mt-5 text-[#00df9a] text-2xl">
               Front End Developer
             </h3>
-            <p className="mt-3 border-b border-dotted border-[#00df9a] pb-3 w-full text-lg leading-relaxed">
+            <p className="mt-3 border-b border-dotted border-[#00df9a] pb-3 w-full text-lg leading-relaxed text-gray-300">
               I’m a Frontend Developer with practical experience building
               responsive, scalable web applications using React, Tailwind CSS,
               and JavaScript. I enjoy working closely with designers and backend
@@ -29,17 +29,17 @@ const About = () => {
             </p>
             <div className="mt-5">
               <h3 className="text-2xl text-[#00df9a]">Personal Information</h3>
-              <p className="mt-1 text-lg font-semibold">
+              <p className="mt-1 text-lg font-semibold text-gray-300">
                 Name: Odoje Oladayo Jacob
               </p>
-              <p className="text-lg font-semibold">Address: Abuja, Nigeria</p>
-              <p className="flex items-center gap-2 text-lg font-semibold">
+              <p className="text-lg font-semibold text-gray-300">Address: Abuja, Nigeria</p>
+              <p className="flex items-center gap-2 text-lg font-semibold text-gray-300">
                 <FaRegEnvelope /> Dayodoje@mail.com
               </p>
-              <p className="flex items-center gap-2 text-lg font-semibold">
+              <p className="flex items-center gap-2 text-lg font-semibold text-gray-300">
                 <FaWhatsapp /> 07057616192
               </p>
-              <p className="flex items-center gap-2 text-lg font-semibold">
+              <p className="flex items-center gap-2 text-lg font-semibold text-gray-300">
                 <IoCallSharp /> 08167482343
               </p>
             </div>

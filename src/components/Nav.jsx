@@ -11,12 +11,12 @@ const Nav = () => {
   return (
     <div className="sticky top-0 z-50" id="home">
       {/* Desktop View */}
-      <div className="md:flex hidden justify-between p-5 m-4">
+      <div className="md:flex hidden justify-between items-center p-5 bg-black">
         <div className="flex items-center gap-4">
           <div className="bg-[#00df9a] h-10 w-10 rounded-lg text-white flex items-center justify-center italic">
             DY
           </div>
-          <h1 className="text-3xl italic">
+          <h1 className="text-3xl italic text-gray-300">
             Dee <span className="text-[#00df9a]">Y</span>
           </h1>
         </div>
@@ -67,10 +67,10 @@ const Nav = () => {
       <div className="md:hidden">
         <div className="flex justify-between items-center p-5 bg-black fixed top-0 left-0 w-full z-50">
           <div className="flex items-center gap-4">
-            <div className="bg-[#00df9a] h-10 w-10 rounded-lg text-black flex items-center justify-center italic">
+            <div className="bg-[#00df9a] h-10 w-10 rounded-lg text-white flex items-center justify-center italic">
               DY
             </div>
-            <h1 className="text-xl italic text-white">
+            <h1 className="text-xl italic text-gray-300">
               Dee <span className="text-[#00df9a]">Y</span>
             </h1>
           </div>
