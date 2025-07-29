@@ -34,7 +34,7 @@ const About = () => {
               </p>
               <p className="text-lg font-semibold text-gray-300">Address: Abuja, Nigeria</p>
               <p className="flex items-center gap-2 text-lg font-semibold text-gray-300">
-                <FaRegEnvelope /> Dayodoje@mail.com
+                <FaRegEnvelope /> Dayodoje@gmail.com
               </p>
               <p className="flex items-center gap-2 text-lg font-semibold text-gray-300">
                 <FaWhatsapp /> 07057616192

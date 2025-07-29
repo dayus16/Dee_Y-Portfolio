@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <div>
       <div className="p-5 mt-8 text-xl font-medium text-center text-gray-300 border-t border-[#00df9a]">
-        <p>Dee_Y © 2024</p>
+        <p> © 2025 Dee_Y. All rights reserved.</p>
       </div>
     </div>
   );

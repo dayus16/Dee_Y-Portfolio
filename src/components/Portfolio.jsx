@@ -6,130 +6,83 @@ import TodoApp from "../Images/Todo_list.png";
 import Restaurant from "../Images/Restuarant.png";
 import Guess from "../Images/Guess_my_number.png";
 
+const projects = [
+  {
+    title: "WATER BILLING SYSTEM",
+    description:
+      "Developed a Water Billing Management System using React.js for component-based user interface, Tailwind CSS, Integrated with a Node.js API for handling all server-side operations and database interactions. Also Includes a secure login page for admin access to manage billing records.",
+    image: Aquabilla,
+    link: "https://water-billing-system-theta.vercel.app/",
+  },
+  {
+    title: "FOOD RECIPE APP",
+    description:
+      "Built a responsive Food Recipe App using React.js and Tailwind CSS, featuring recipe browsing, detailed instructions, and a modern, user-friendly interface.",
+    image: foodApp,
+    link: "https://food-app-react-tailwindcss-tan.vercel.app/",
+  },
+  {
+    title: "TODO APP",
+    description:
+      "This minimalist todo application was built with React.js and Tailwind CSS. Designed to enhance productivity, it facilitates task prioritization and effective management. Users can effortlessly create their to-do lists, mark tasks as completed, and seamlessly delete them, offering a seamless task management experience.",
+    image: TodoApp,
+    link: "https://todo-list-two-nu-30.vercel.app/",
+  },
+  {
+    title: "RESTAURANT APP",
+    description:
+      "Crafted a simple yet engaging Restaurant Web App using HTML, CSS, and JavaScript, enabling easy menu exploration and smooth navigation.",
+    image: Restaurant,
+    link: "https://restaurant-phi-eight-25.vercel.app/",
+  },
+  {
+    title: "GUESS MY NUMBER",
+    description:
+      "Created an interactive Guess My Number Game using HTML, CSS, and JavaScript. The game challenges users to guess a randomly generated number within a limited number of attempts. Real-time feedback guides the player by indicating whether their guess is too high or too low. Designed with a clean and responsive user interface for an engaging gaming experience.",
+    image: Guess,
+    link: "https://guess-my-number-game-liard.vercel.app/",
+  },
+];
+
 const Portfolio = () => {
-  const waterBillingSystemText = `Developed a Water Billing Management System using React.js for component-based user interface,  Tailwind CSS,  Integrated with a Node.js API for handling all server-side operations and database interactions. Also Includes a secure login page for admin access to manage billing records.`;
-
-  const foodRecipe = `Built a responsive Food Recipe App using React.js and Tailwind
-              CSS, featuring recipe browsing, detailed instructions, and a
-              modern, user-friendly interface.`;
-
-  const todoList = ` This minimalist todo application was built with HTML, CSS, and
-              JavaScript. Designed to enhance productivity, it facilitates task
-              prioritization and effective management. Users can effortlessly
-              create their to-do lists, mark tasks as completed, and seamlessly
-              delete them, offering a seamless task management experience.`;
-
-  const restuarant = `  Crafted a simple yet engaging Restaurant Web App using HTML, CSS,
-              and JavaScript, enabling easy menu exploration and smooth
-              navigation.`;
-
-  const guessMyNumber = `Created an interactive Guess My Number Game using HTML, CSS, and
-              JavaScript. The game challenges users to guess a randomly
-              generated number within a limited number of attempts. Real-time
-              feedback guides the player by indicating whether their guess is
-              too high or too low. Designed with a clean and responsive user
-              interface for an engaging gaming experience.`;
-
   return (
     <div className="p-5" id="portfolio">
-      <div className="p-5 text-4xl font-bold mt-10 text-[#00df9a]">
-        <h1 className="border-b border-dotted pb-3">My Portfolio</h1>
+      <div className="text-4xl font-bold mt-10 text-[#00df9a] p-5">
+        <h1 className="border-b border-dotted pb-3">
+          My Portfolio
+        </h1>
       </div>
 
-      <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 m-5 gap-10">
-        <div className="border border-gray-400/10 h-105 rounded-lg overflow-hidden">
-          <img src={Aquabilla} alt="Project" className="w-full h-[200px]" />
+      <div className="max-w-7xl mx-auto grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-6 p-4 mt-10">
+        {projects.map((project, index) => (
+          <div
+            key={index}
+            className="border border-gray-400/10 rounded-lg overflow-hidden bg-[rgba(0, 0, 0, 0.918))] min-h-[450px] flex flex-col shadow-md hover:shadow-xl transition-shadow"
+          >
+            <img
+              src={project.image}
+              alt={project.title}
+              className="w-full h-48 object-cover"
+            />
 
-          <div className="mt-3 text-center mx-auto">
-            <h3 className="mb-2 font-medium text-xl text-gray-300">
-              WATER BILLING SYSTEM
-            </h3>
-            <p className="text-gray-300 mb-2 p-3">
-              {waterBillingSystemText.substring(0, 200) + "..."}
-            </p>
-            <a
-              href="https://water-billing-system-theta.vercel.app/"
-              target="_blank"
-              className="text-white flex items-center justify-center"
-            >
-              <FaExternalLinkAlt size={20} />
-            </a>
+            <div className="flex flex-col justify-between flex-grow text-center p-4">
+              <h3 className="mb-2 font-medium text-xl text-gray-300">
+                {project.title}
+              </h3>
+              <p className="text-gray-300 mb-4">
+                {project.description.substring(0, 200) + "..."}
+              </p>
+              <a
+                href={project.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white flex items-center justify-center hover:text-[#00df9a] transition duration-300"
+              >
+                <FaExternalLinkAlt size={20} />
+              </a>
+            </div>
           </div>
-        </div>
-        <div className="border border-gray-400/10 h-105 rounded-lg overflow-hidden [bg-[rgba(0,0,0,0.7)]">
-          <img src={foodApp} alt="Project" className="w-full h-[200px]" />
-
-          <div className="mt-3 text-center mx-auto">
-            <h3 className="mb-2 font-medium text-xl text-gray-300">
-              FOOD RECIPE APP
-            </h3>
-            <p className="text-gray-300 mb-2 p-3">
-              {foodRecipe.substring(0, 200) + "..."}
-            </p>
-            <a
-              href="https://food-app-react-tailwindcss-tan.vercel.app/"
-              target="_blank"
-              className="text-white flex items-center justify-center"
-            >
-              <FaExternalLinkAlt size={20} />
-            </a>
-          </div>
-        </div>
-        <div className="border border-gray-400/10 h-105 rounded-lg overflow-hidden [bg-[rgba(0,0,0,0.7)]">
-          <img src={TodoApp} alt="Project" className="w-full h-[200px]" />
-
-          <div className="mt-3 text-center mx-auto">
-            <h3 className="mb-2 font-medium text-xl text-gray-300">TODO APP</h3>
-            <p className="text-gray-300 mb-2 p-3">
-              {todoList.substring(0, 200) + "..."}
-            </p>
-            <a
-              href="https://todo-list-app-chi-one.vercel.app/"
-              target="_blank"
-              className="text-white flex items-center justify-center"
-            >
-              <FaExternalLinkAlt size={20} />
-            </a>
-          </div>
-        </div>
-        <div className="border border-gray-400/10 h-105 rounded-lg overflow-hidden [bg-[rgba(0,0,0,0.7)]">
-          <img src={Restaurant} alt="Project" className="w-full h-[200px]" />
-
-          <div className="mt-3 text-center mx-auto">
-            <h3 className="mb-2 font-medium text-xl text-gray-300">
-              RESTAURANT APP
-            </h3>
-            <p className="text-gray-300 mb-2 p-3">
-              {restuarant.substring(0, 200) + "..."}
-            </p>
-            <a
-              href="https://restaurant-phi-eight-25.vercel.app/"
-              target="_blank"
-              className="text-white flex items-center justify-center"
-            >
-              <FaExternalLinkAlt size={20} />
-            </a>
-          </div>
-        </div>
-        <div className="border border-gray-400/10 h-105 rounded-lg overflow-hidden [bg-[rgba(0,0,0,0.7)]">
-          <img src={Guess} alt="Project" className="w-full h-[200px]" />
-
-          <div className="mt-3 text-center mx-auto">
-            <h3 className="mb-2 font-medium text-xl text-gray-300">
-              GUESS MY NUMBER
-            </h3>
-            <p className="text-gray-300 mb-2 p-3">
-              {guessMyNumber.substring(0, 200) + "..."}
-            </p>
-            <a
-              href="https://guess-my-number-game-liard.vercel.app/"
-              target="_blank"
-              className="text-white flex items-center justify-center"
-            >
-              <FaExternalLinkAlt size={20} />
-            </a>
-          </div>
-        </div>
+        ))}
       </div>
     </div>
   );

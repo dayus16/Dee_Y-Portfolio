@@ -91,19 +91,19 @@ const Nav = () => {
               : "fixed left-[-100%] top-16 p-5 uppercase space-y-5 w-full text-[#00df9a] bg-black h-screen ease-in duration-300"
           }
         >
-          <li className="border-b border-[#00df9a] pb-3" onClick={handleNav}>
+          <li className="border-b border-gray-400/10 pb-3" onClick={handleNav}>
             <a href="#header">Home</a>
           </li>
-          <li className="border-b pb-3" onClick={handleNav}>
+          <li className="border-b border-gray-400/10 pb-3" onClick={handleNav}>
             <a href="#about">About</a>
           </li>
-          <li className="border-b pb-3" onClick={handleNav}>
+          <li className="border-b border-gray-400/10 pb-3" onClick={handleNav}>
             <a href="#skill">Skill</a>
           </li>
-          <li className="border-b pb-3" onClick={handleNav}>
+          <li className="border-b border-gray-400/10 pb-3" onClick={handleNav}>
             <a href="#resume">Resume</a>
           </li>
-          <li className="border-b pb-3" onClick={handleNav}>
+          <li className="border-b border-gray-400/10 pb-3" onClick={handleNav}>
             <a href="#portfolio">Portfolio</a>
           </li>
           <li onClick={handleNav}>
