@@ -5,8 +5,17 @@ import foodApp from "../Images/food_recipe.png";
 import TodoApp from "../Images/Todo_list.png";
 import Restaurant from "../Images/Restuarant.png";
 import Guess from "../Images/Guess_my_number.png";
+import Blog from "../Images/Blog.png";
+import { motion } from "framer-motion";
 
 const projects = [
+  {
+    title: "Sport Blog",
+    description:
+      "Built a responsive sports blogging platform built with React.js, Tailwind CSS, and Contentful CMS. It features dynamic post rendering, individual blog pages, a custom view counter, and smooth navigation, showcasing skills in API integration, routing, and UI design.",
+    image: Blog,
+    link: "https://www.sportpulseblog.com/",
+  },
   {
     title: "WATER BILLING SYSTEM",
     description:
@@ -46,11 +55,16 @@ const projects = [
 
 const Portfolio = () => {
   return (
-    <div className="p-5" id="portfolio">
+    <motion.div
+      initial={{ opacity: 0, x: -200 }}
+      transition={{ duration: 1 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      viewport={{ once: true }}
+      className="p-5"
+      id="portfolio"
+    >
       <div className="text-4xl font-bold mt-10 text-[#00df9a] p-5">
-        <h1 className="border-b border-dotted pb-3">
-          My Portfolio
-        </h1>
+        <h1 className="border-b border-dotted pb-3">My Portfolio</h1>
       </div>
 
       <div className="max-w-7xl mx-auto grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-6 p-4 mt-10">
@@ -84,7 +98,7 @@ const Portfolio = () => {
           </div>
         ))}
       </div>
-    </div>
+    </motion.div>
   );
 };
 

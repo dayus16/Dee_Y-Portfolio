@@ -1,8 +1,16 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 const Resume = () => {
   return (
-    <div id="resume" className="p-5 mt-10">
+    <motion.div
+      initial={{ opacity: 0, y: -200 }}
+      transition={{ duration: 1 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      id="resume"
+      className="p-5 mt-10"
+    >
       <div className="text-4xl font-bold p-5 text-[#00df9a]">
         <h1 className="border-b border-dotted border-#00df9a] pb-3">
           My Resume
@@ -62,7 +70,7 @@ const Resume = () => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

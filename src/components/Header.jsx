@@ -2,10 +2,18 @@ import React from "react";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import Resume from "../Images/Odoje_Oladayo_Resume.pdf";
+import { motion } from "framer-motion";
 
 const Header = () => {
   return (
-    <div className="p-5 mt-20" id="header">
+    <motion.div
+      initial={{ opacity: 0, x: -200 }}
+      transition={{ duration: 1 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      viewport={{ once: true }}
+      className="p-5 mt-20"
+      id="header"
+    >
       <div className="text-center">
         <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl text-[#00df9a] font-bold leading-tight">
           Hello, I am Oladayo. <br /> Front End Developer
@@ -48,7 +56,7 @@ const Header = () => {
           </a>
         </nav>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
