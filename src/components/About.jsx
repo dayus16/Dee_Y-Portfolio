@@ -1,5 +1,5 @@
 import React from "react";
-import DeeYImage from "../Images/Dee.png";
+import DeeYImage from "../Images/Dee.jpeg";
 import { FaRegEnvelope, FaWhatsapp } from "react-icons/fa";
 import { IoCallSharp } from "react-icons/io5";
 import { motion } from "framer-motion";
@@ -24,14 +24,16 @@ const About = () => {
             </h3>
             <p className="mt-3 border-b border-dotted border-[#00df9a] pb-3 w-full text-lg leading-relaxed text-gray-300">
               I’m a Frontend Developer with practical experience building
-              responsive, scalable web applications using React, Tailwind CSS,
-              and JavaScript. I enjoy working closely with designers and backend
-              teams to deliver clean, maintainable, and high-performance user
-              interfaces. I’m a quick learner, passionate about modern React
-              practices such as state management, data fetching, server-side
-              rendering, and responsive design. I love working in agile teams
-              where I can contribute, grow, and continuously improve my skills.
+              responsive, scalable web applications using Next.js, React.js,
+              Tailwind CSS, and JavaScript. I enjoy working closely with
+              designers and backend teams to deliver clean, maintainable, and
+              high-performance user interfaces. I’m a quick learner, passionate
+              about modern React practices such as state management, data
+              fetching, server-side rendering, and responsive design. I thrive
+              in agile teams where I can contribute, grow, and continuously
+              improve my skills.
             </p>
+
             <div className="mt-5">
               <h3 className="text-2xl text-[#00df9a]">Personal Information</h3>
               <p className="mt-1 text-lg font-semibold text-gray-300">
@@ -53,11 +55,12 @@ const About = () => {
           </motion.div>
 
           <motion.div
-           initial={{ opacity: 0, x: 200 }}
-          transition={{ duration: 1 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true }}
-           className="flex-1 flex justify-center">
+            initial={{ opacity: 0, x: 200 }}
+            transition={{ duration: 1 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            className="flex-1 flex justify-center"
+          >
             <div className="w-100 h-130 rounded-lg overflow-hidden shadow-lg">
               <img
                 src={DeeYImage}

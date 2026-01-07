@@ -21,6 +21,10 @@ const Resume = () => {
           <h1 className="text-center uppercase underline decoration-[#00df9a] decoration-2 underline-offset-4 text-lg font-medium text-gray-300">
             Experience
           </h1>
+          <div className="mt-5 border border-gray-400/10 py-5 px-8 rounded text-gray-300">
+            <p>Freelance Developer</p>
+            <p>04/2025 - Present</p>
+          </div>
 
           <div className="mt-5 border border-gray-400/10 py-5 px-8 rounded text-gray-300">
             <p>Intenship at Techvibes Nig Limited.</p>

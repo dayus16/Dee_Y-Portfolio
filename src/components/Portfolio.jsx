@@ -12,7 +12,7 @@ const projects = [
   {
     title: "Sport Blog",
     description:
-      "Built a responsive sports blogging platform built with React.js, Tailwind CSS, and Contentful CMS. It features dynamic post rendering, individual blog pages, a custom view counter, and smooth navigation, showcasing skills in API integration, routing, and UI design.",
+      "Built a responsive sports blogging platform built with Next.js, Tailwind CSS, and Contentful CMS. It features dynamic post rendering, individual blog pages, a custom view counter, and smooth navigation, showcasing skills in API integration, routing, and UI design.",
     image: Blog,
     link: "https://www.sportpulseblog.com/",
   },
